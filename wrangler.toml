@@ -1,0 +1,11 @@
+name = "freq"
+compatibility_date = "2026-05-01"
+account_id = "c4f9929d00e6cd65c904027c02819178"
+
+[assets]
+directory = "./out"
+not_found_handling = "single-page-application"
+
+[[routes]]
+pattern = "freq.exlax.org"
+custom_domain = true
