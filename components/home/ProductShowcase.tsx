@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { useCartStore } from '@/lib/store'
 import { products } from '@/lib/products'
 import ProductCard from '@/components/product/ProductCard'
 
@@ -18,14 +17,13 @@ export default function ProductShowcase() {
           className="text-center mb-16"
         >
           <p className="text-xs text-brand uppercase tracking-widest mb-4 font-semibold">
-            The Lineup
+            The Collection
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Pick Your Freedom
+            Everything Your Cat Needs
           </h2>
           <p className="text-foreground/50 max-w-md mx-auto">
-            Every FREQ system ships with everything you need to go wireless
-            tonight.
+            Three products. One mission: a calmer, healthier, happier cat.
           </p>
         </motion.div>
 

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { products } from '@/lib/products'
 import ProductCard from '@/components/product/ProductCard'
 
-const categories = ['all', 'guitar', 'bass', 'keys'] as const
+const categories = ['all', 'calm', 'hydration', 'wellness'] as const
 type Category = (typeof categories)[number]
 
 export default function ProductsPage() {
@@ -27,7 +27,7 @@ export default function ProductsPage() {
             All Products
           </p>
           <h1 className="text-5xl font-bold text-foreground mb-8">
-            The FREQ Lineup
+            The PURA Collection
           </h1>
 
           <div className="flex gap-2 flex-wrap">

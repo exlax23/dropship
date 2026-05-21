@@ -5,30 +5,30 @@ import { motion } from 'framer-motion'
 const testimonials = [
   {
     quote:
-      "I've been through four different wireless systems. FREQ One is the first one that doesn't color my tone. Night and day difference.",
-    name: 'Marcus T.',
-    role: 'Touring Guitarist — 12 years',
+      "My cat Mochi used to scratch herself raw during thunderstorms. After two weeks of the Calm Chews she just... sleeps through them. I'm genuinely shocked.",
+    name: 'Priya S.',
+    role: 'Cat mom of 2, Portland OR',
     rating: 5,
-    initial: 'M',
-    color: '#00d4ff',
+    initial: 'P',
+    color: '#7ab87a',
   },
   {
     quote:
-      "The FREQ Pro handles my 7-string with no issues. Setup took 30 seconds. I've used it at three gigs without touching it since.",
-    name: 'Sasha R.',
-    role: 'Session Bassist',
+      "The Flow Fountain is the best $64 I've ever spent on this cat. He was chronically dehydrated — vet confirmed his kidney values improved at his last checkup.",
+    name: 'James R.',
+    role: 'Verified buyer',
+    rating: 5,
+    initial: 'J',
+    color: '#60a5fa',
+  },
+  {
+    quote:
+      "I bought the lick mat to slow her eating and now it's a 20-minute enrichment activity. She goes nuts for it. Also made the cutest TikTok of my life.",
+    name: 'Sofia M.',
+    role: '47k followers @sofiacatmom',
     rating: 5,
     initial: 'S',
-    color: '#a855f7',
-  },
-  {
-    quote:
-      "As a keys player I never thought wireless was worth it. FREQ Mini changed that. It's invisible on my setup and sounds perfect.",
-    name: 'Devon K.',
-    role: 'Keys & Piano',
-    rating: 5,
-    initial: 'D',
-    color: '#10b981',
+    color: '#c084fc',
   },
 ]
 
@@ -43,10 +43,10 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <p className="text-xs text-brand uppercase tracking-widest mb-4 font-semibold">
-            Real Players
+            Real Cat Parents
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            They Cut the Cable.
+            Happy Cats. Obsessed Owners.
           </h2>
         </motion.div>
 
@@ -62,13 +62,7 @@ export default function Testimonials() {
             >
               <div className="flex gap-0.5 mb-4">
                 {Array.from({ length: t.rating }).map((_, idx) => (
-                  <svg
-                    key={idx}
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="#f59e0b"
-                  >
+                  <svg key={idx} width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 ))}
@@ -84,9 +78,7 @@ export default function Testimonials() {
                   {t.initial}
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-foreground">
-                    {t.name}
-                  </p>
+                  <p className="text-sm font-semibold text-foreground">{t.name}</p>
                   <p className="text-xs text-muted">{t.role}</p>
                 </div>
               </div>

@@ -29,22 +29,19 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
-          <FreqLogo />
+        <Link href="/" className="flex items-center gap-2.5 group">
+          <PuraLogo />
           <span className="text-xl font-bold tracking-widest text-foreground group-hover:text-brand transition-colors">
-            FREQ
+            PURA
           </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-foreground/60">
-          <Link
-            href="/products"
-            className="hover:text-foreground transition-colors"
-          >
+          <Link href="/products" className="hover:text-foreground transition-colors">
             Products
           </Link>
           <Link href="/#features" className="hover:text-foreground transition-colors">
-            Features
+            Benefits
           </Link>
           <Link href="/#faq" className="hover:text-foreground transition-colors">
             FAQ
@@ -68,16 +65,12 @@ export default function Navbar() {
   )
 }
 
-function FreqLogo() {
+function PuraLogo() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path
-        d="M2 12 Q4 6 6 12 Q8 18 10 12 Q12 6 14 12 Q16 18 18 12 Q20 6 22 12"
-        stroke="#00d4ff"
-        strokeWidth="2"
-        strokeLinecap="round"
-        fill="none"
-      />
+      <circle cx="12" cy="12" r="9" stroke="#7ab87a" strokeWidth="1.5" />
+      <path d="M8 12c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4" stroke="#7ab87a" strokeWidth="1.5" strokeLinecap="round" />
+      <circle cx="12" cy="12" r="1.5" fill="#7ab87a" />
     </svg>
   )
 }

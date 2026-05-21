@@ -9,9 +9,9 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'FREQ — Cut the Cable. Keep the Tone.',
+  title: 'PURA — Your Cat. Elevated.',
   description:
-    'Premium wireless instrument systems for musicians who refuse to compromise. Zero latency. 100ft range. Universal fit.',
+    'Premium pet wellness products for cats. Calming enrichment, pure hydration, and natural supplements — because your cat deserves better.',
 }
 
 export default function RootLayout({

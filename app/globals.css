@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #00d4ff;
-  --color-brand-glow: rgba(0, 212, 255, 0.15);
+  --color-brand: #7ab87a;
+  --color-brand-glow: rgba(122, 184, 122, 0.12);
   --color-surface: #111111;
   --color-surface-2: #1a1a1a;
   --color-muted: #666666;
@@ -40,5 +40,5 @@ body {
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #00d4ff;
+  background: #7ab87a;
 }

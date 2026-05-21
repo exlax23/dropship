@@ -4,24 +4,24 @@ import { motion } from 'framer-motion'
 
 const features = [
   {
-    icon: <ZapIcon />,
-    label: 'Zero Latency',
-    sub: '<5ms signal delay',
+    icon: <LeafIcon />,
+    label: 'Vet-Reviewed',
+    sub: 'Every formula checked',
   },
   {
-    icon: <WaveIcon />,
-    label: '100ft Range',
-    sub: 'Stage-ready distance',
+    icon: <ShieldIcon />,
+    label: 'BPA-Free',
+    sub: 'Food-grade materials only',
   },
   {
-    icon: <PlugIcon />,
-    label: 'Universal Fit',
-    sub: 'Guitar, bass, keys',
+    icon: <HeartIcon />,
+    label: 'Made for Cats',
+    sub: 'Not a dog product rebranded',
   },
   {
-    icon: <BatteryIcon />,
-    label: '8-Hour Battery',
-    sub: 'Full night, no recharge',
+    icon: <TruckIcon />,
+    label: 'Fast Shipping',
+    sub: 'Free over $50',
   },
 ]
 
@@ -43,9 +43,7 @@ export default function FeatureStrip() {
                 {feature.icon}
               </div>
               <div>
-                <p className="font-semibold text-foreground text-sm">
-                  {feature.label}
-                </p>
+                <p className="font-semibold text-foreground text-sm">{feature.label}</p>
                 <p className="text-muted text-xs mt-0.5">{feature.sub}</p>
               </div>
             </motion.div>
@@ -56,35 +54,39 @@ export default function FeatureStrip() {
   )
 }
 
-function ZapIcon() {
+function LeafIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <path d="M17 8C8 10 5.9 16.17 3.82 19.34a1 1 0 00.95 1.5h10.46a1 1 0 00.86-.49C19.4 16.14 20 12 17 8z" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M7 19c0-3 2-5 5-6" strokeLinecap="round" />
+    </svg>
+  )
+}
+
+function ShieldIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
+function HeartIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+      <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
     </svg>
   )
 }
 
-function WaveIcon() {
+function TruckIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M2 12 Q4 6 6 12 Q8 18 10 12 Q12 6 14 12 Q16 18 18 12 Q20 6 22 12" strokeLinecap="round" />
-    </svg>
-  )
-}
-
-function PlugIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M12 22v-5M9 8V2M15 8V2M17 8H7a1 1 0 00-1 1v3a5 5 0 0010 0V9a1 1 0 00-1-1z" strokeLinecap="round" />
-    </svg>
-  )
-}
-
-function BatteryIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <rect x="2" y="7" width="18" height="10" rx="2" />
-      <path d="M20 10v4M7 11h6" strokeLinecap="round" />
+      <rect x="1" y="3" width="15" height="13" rx="1" />
+      <path d="M16 8h4l3 3v5h-7V8z" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="5.5" cy="18.5" r="2.5" />
+      <circle cx="18.5" cy="18.5" r="2.5" />
     </svg>
   )
 }

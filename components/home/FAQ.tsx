@@ -5,28 +5,28 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const faqs = [
   {
-    q: 'Does it work with my instrument?',
-    a: "Yes. FREQ systems work with any instrument that has a standard 1/4\" output — guitars, basses, keyboards, and more. The FREQ Mini also includes a 3.5mm adapter.",
+    q: 'Are these products safe for my cat?',
+    a: 'Yes. Every PURA product is made from food-grade, BPA-free materials and formulated with veterinary input. The Calm Chews use L-theanine and chamomile — both well-studied, widely recommended by vets for feline anxiety. No melatonin, no sedatives.',
   },
   {
-    q: 'Will this affect my tone?',
-    a: "No. FREQ uses a high-fidelity digital signal chain that preserves the full frequency response of your instrument. Most players report no audible difference from a premium cable.",
+    q: 'My cat is picky. Will they actually use the lick mat?',
+    a: 'Most cats take to it immediately with wet food or Churu-style treat tubes. If yours is hesitant, start with a tiny amount on the mat and let curiosity do the work. The texture naturally triggers their licking instinct.',
   },
   {
-    q: 'What is the latency?',
-    a: 'The FREQ One delivers <5ms latency. The FREQ Pro delivers <3ms. Both are below the threshold of human perception (around 7-10ms), so you will never feel or hear any delay.',
+    q: 'How often do I replace the Flow Fountain filter?',
+    a: 'Every 30 days with one cat, every 2-3 weeks with multiple cats. Replacement filters are available in 3-packs on our site. The pump itself lasts 12–18 months with weekly cleaning.',
   },
   {
     q: 'How long does shipping take?',
-    a: 'Standard shipping (5-7 business days) is free on orders over $75. Expedited shipping (2-3 days) is $12. All orders ship within 1 business day.',
+    a: 'Standard shipping (5-7 business days) is free on orders over $50. Expedited shipping (2-3 days) is $9.99. All orders ship within 1 business day.',
   },
   {
     q: "What's your return policy?",
-    a: 'We offer a no-questions-asked 30-day return policy. If it does not work for your setup, we will refund you in full — including return shipping.',
+    a: "30-day no-questions-asked returns. If your cat doesn't take to a product, we'll refund you in full — including return shipping. We'd rather you try it risk-free than not try it at all.",
   },
   {
-    q: 'Can I use two FREQ systems at once?',
-    a: 'The FREQ Pro supports dual-channel operation, letting you switch between two instruments instantly. You can also run multiple FREQ systems simultaneously — they operate on automatically selected channels.',
+    q: 'Can I use the Calm Chews with my cat\'s current medication?',
+    a: "The chews are generally safe alongside most medications, but always check with your vet if your cat is on prescription drugs. L-theanine has a strong safety profile, but your vet knows your cat's full picture.",
   },
 ]
 
@@ -45,9 +45,7 @@ export default function FAQ() {
           <p className="text-xs text-brand uppercase tracking-widest mb-4 font-semibold">
             Questions
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            FAQ
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground">FAQ</h2>
         </motion.div>
 
         <div className="space-y-2">
